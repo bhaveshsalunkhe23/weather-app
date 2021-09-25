@@ -1,0 +1,80 @@
+body {
+    width: auto;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+  fieldset {
+    display: ruby-base;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0em;
+    -webkit-padding-start: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+    border: 10px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    padding: 30px;
+  }
+  
+  
+  .weather-input,
+  p {
+    display: block;
+    font-weight: 300;
+    width: 100%;
+    font-size: 25px;
+    border: 0px;
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #080808;
+    background: rgb(167, 184, 233);
+    font-family: Open Sans, Verdana;
+    padding: 10px 15px;
+    margin: 30px 0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .weather-input:focus {
+    border-bottom: 1px solid rgb(20, 19, 19);
+  }
+  
+  .weather-button {
+    background-color: transparent;
+    border: 2px solid rgb(120, 141, 235);
+    padding: 10px 20px;
+    width: 100%;
+    min-width: 350px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .weather-button:hover {
+    border: 2px solid #0c0c0c;
+  }
+  
+  p {
+    color: #000000;
+  }

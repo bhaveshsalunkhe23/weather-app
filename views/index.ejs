@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <title>WeatherApp</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/office/16/000000/sunset--v2.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<div class="container">
+
+    <fieldset>
+      <form action="/" method="post">
+        <input name="city" type="text" class="weather-input" placeholder="Enter a City Name" required>
+        <input type="submit" class="weather-button" value="Check Weather">
+      </form>
+  
+      <%if( weather !== null){ %>
+      
+
+        <section class="vh-100" style="background-color: #f5f6f7;">
+            <div class="container py-5 h-50">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-10 col-lg-8 col-xl-6">
+          
+                  <div class="card bg-dark text-white" style="border-radius: 0px;">
+                    <div class="bg-image" style="border-radius: 35px;">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/draw1.png"
+                        class="card-img"
+                        alt="weather"
+                      />
+                      <div class="mask" style="background-color: rgba(190, 216, 232, .5);"></div>
+                    </div>
+                    <div class="card-img-overlay text-dark p-5">
+                      <h4 class="mb-0"><%= place %><h6><%= timezone %></h6></h4>
+                      <p class="display-2 my-3"><%= temp %>°C</p>
+                      <p class="mb-2">Fahrenheit: <strong><%= fahrenheit %>°F</strong></p>
+                      <h6><b>Main:</b><%= main %> <b>Cloud coverage:</b><%= clouds %>%  <b>Pressure:</b><%= pressure %> N·m−2</h6> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      <% } %>
+      <% if(error !== null){ %>
+        <p>
+        <%= error %>
+        </p>
+        <% } %>
+    </fieldset>
+</div>
+          
+
+
+
+                
+
+
+
+        
+        
