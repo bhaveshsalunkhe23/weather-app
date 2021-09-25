@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const app = express();
+const port = process.env.PORT || 3000;
 
 
 require('dotenv').config();
@@ -60,6 +61,6 @@ app.post('/', function(req, res) {
     });
 });
 
-app.listen(5000, function() {
-    console.log('Weather app listening on port 5000!');
-});
+app.listen(port, () => {
+    console.log('Weather app listening on port 3000!');
+})
